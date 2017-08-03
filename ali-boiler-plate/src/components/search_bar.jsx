@@ -7,7 +7,7 @@ class SearchBar extends Component {
     this.state = {sub : ' '}
 
     }
-}
+
 
 render () {
     return (
@@ -20,5 +20,13 @@ render () {
             </div>
     )
 }
+
+onInputChange(sub) {
+    this.setState({term})
+    this.props.onSearchSubChange(sub)
+}
+
+}
+
 
 export default SearchBar 
