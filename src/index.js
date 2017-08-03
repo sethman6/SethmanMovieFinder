@@ -1,6 +1,8 @@
-const server = require('./server')
-const PORT = process.env.PORT || 3000
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
 
-server.listen(PORT, () => {
-    console.log('listening on port' + PORT)
-})
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
