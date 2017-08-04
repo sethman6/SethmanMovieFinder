@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import getMovies from './api'
+import SearchBar from './SearchBar'
 
 class App extends Component {
   render() {
@@ -11,9 +12,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to Sethman Movie Finder</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.jsx</code> and save to reload.
-        </p>
+        <SearchBar/>
       </div>
     )
   }
